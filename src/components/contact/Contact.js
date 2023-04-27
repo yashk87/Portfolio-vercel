@@ -4,7 +4,7 @@ import Phone from "../../img/phone.png"
 import Email from "../../img/email.png"
 import Address from "../../img/address.png"
 import { useRef } from 'react'
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { useState } from 'react'
 import Insta from "../../img/instagram.png"
 import Linked from "../../img/linkedin.png"
