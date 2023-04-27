@@ -6,11 +6,12 @@
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
     transition: 0.3s all ease-in;
+    box-shadow: 0 0 20px rgb(159, 159, 159);
 }
 
 .p-browser{
     height: 20px;
-    background: linear-gradient(124deg, #000272 0%, #ac1dff 100%);
+    background:black;
     display: flex;
     align-items: center;
 }

@@ -39,7 +39,7 @@ const Contact = () => {
                             <img
                                 src={Phone}
                                 alt=""
-                                srcset="" className='c-icon' />
+                                srcSet="" className='c-icon' />
                                 +91 7028718223
                         </div>
                         <div className="c-info-item">

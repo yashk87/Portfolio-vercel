@@ -21,8 +21,8 @@
 }
 
 .a-card{
-    width: 60%;
-    height: 70vh;
+    width: 55%;
+    height: 66vh;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
@@ -30,10 +30,9 @@
 
 .a-card.bg{
     position: absolute;
-    top: 110px;
-    left: 50px;
-    background: #474bff;
-background: linear-gradient(124deg, #000272 0%, #ac1dff 100%);
+    top: 120px;
+    left: 105px;
+background:  rgb(20, 0, 72);
 }
 
 .a-right{
@@ -43,9 +42,9 @@ background: linear-gradient(124deg, #000272 0%, #ac1dff 100%);
 }
 
 .a-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 70%;
+    height:100%;
+    object-fit:contain;
 }
 
 .a-title{
@@ -73,7 +72,6 @@ background: linear-gradient(124deg, #000272 0%, #ac1dff 100%);
     .a{
         flex-direction: column;
         text-align: center;
-        margin-top: 50px;
     }
 
     .a-desc{

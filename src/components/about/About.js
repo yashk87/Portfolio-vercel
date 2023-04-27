@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import Tech from "../../img/tech.jpg";
+import Tech from "../../img/about.jpg";
 const About = () => {
   return (
     <div className='a'>
@@ -20,7 +20,7 @@ const About = () => {
            proper from Paratwada, Amaravati dist. I am fond of playing sports,
             Making digital Arts, Editing Photos, I enjoy Working on Projects based on web applications
             as well (especially front-end), I Always try to maintain userfriendly interface throughout,
-            trying of maintaining this pace and looking forward to learn & grasp more concepts.<br></br> Currently working on back-end technology. 
+            trying of maintaining this pace and looking forward to learn & grasp more concepts.<br></br> 
           </p>
         </div>
     </div>

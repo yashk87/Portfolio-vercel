@@ -1,0 +1,88 @@
+.navBar{
+    width: 100vw;
+    position: absolute;
+    background: linear-gradient(45deg, #000000 0%, #160041 100%);
+    z-index: 9;
+    color: white;
+    transition: 0.3s all ease;
+
+}
+
+.cancel{
+    display: none;
+    position: absolute;
+    width: 40px;
+}
+
+.hide-show{
+    position: absolute;
+    width: 40px;
+}
+
+
+.navBar ul{
+    display: flex;
+    list-style: 
+    none;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    font-weight:500;
+
+    
+}
+
+.hide-show{
+    display: none;
+}
+
+.navBar ul li{
+    padding: 15px;
+}
+
+.Link{
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+.Link:focus {
+    outline: none !important;
+}
+
+@media screen and (max-width:480px){
+    .navBar{
+        height: 100vh;
+        margin: auto;
+        width: auto;
+        transform: translateX(-500px);
+    }
+
+    .navBar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 75vw;
+    }
+
+    .hide-show{
+        display: block;
+        width: 40px;
+        margin: 5px;
+        position: absolute;
+        z-index: 90;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .cancel{
+        width: 40px;
+        margin: 5px;
+        position: absolute;
+        z-index: 999;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .navBar ul li{
+        padding: 50px;
+    }
+}
