@@ -23,7 +23,6 @@
 .a-card{
     width: 55%;
     height: 66vh;
-    border-radius: 30px;
     position: relative;
     overflow: hidden;
 }
@@ -32,7 +31,6 @@
     position: absolute;
     top: 120px;
     left: 105px;
-background:  rgb(20, 0, 72);
 }
 
 .a-right{
@@ -41,10 +39,16 @@ background:  rgb(20, 0, 72);
 
 }
 
+.border{
+    border: 10px solid rgb(34, 0, 59);
+}
+
 .a-img{
     width: 70%;
     height:100%;
     object-fit:contain;
+    display: flex;
+    margin: auto;
 }
 
 .a-title{

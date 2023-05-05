@@ -5,10 +5,15 @@ import Menu from "../../img/menu.png"
 import { useRef } from 'react'
 import Close from "../../img/cancel.png"
 
-const Header = () => {
+const Header = (props) => {
+    const theme = props.theme
     const change = useRef()
+    // const change2 = useRef()
     const open = useRef()
     const close = useRef()
+    // useEffect(() => {
+    //     change.current.backgroundColor = "white"
+    // },[theme])
     const toggle = () => {
         let current = change.current.style.transform
         if(current === "translateX(0px)"){
@@ -28,11 +33,11 @@ const Header = () => {
         <>
         <img ref={open} onClick={toggle} className='hide-show' src={Menu} alt="" />
         <img ref={close} onClick={toggle} className='cancel' src={Close} alt="" />
-        <div  ref={change} className='navBar'>
+        <div style={{backgroundColor:theme ? "rgb(56, 0, 125)" : "rgb(20, 0, 45)"}} ref={change} className='navBar'>
             
           <ul>
             
-            <Link className='Link noSelect' to={"/Portfolio"}><li>Home</li></Link>
+            <Link className='Link noSelect' to={"/"}><li>Home</li></Link>
             <Link className='Link noSelect' to={"/about"}><li>About Me</li></Link>
             <Link className='Link noSelect' to={"/product"}><li>Skills</li></Link>
             <Link className='Link noSelect' to={"/contact"}><li>Contact</li></Link>

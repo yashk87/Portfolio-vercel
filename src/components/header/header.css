@@ -1,7 +1,7 @@
 .navBar{
     width: 100vw;
     position: absolute;
-    background: linear-gradient(45deg, #000000 0%, #160041 100%);
+    background-color:rgb(56, 0, 125);
     z-index: 9;
     color: white;
     transition: 0.3s all ease;

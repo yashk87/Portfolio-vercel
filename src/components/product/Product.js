@@ -9,6 +9,7 @@ const Product = (props) => {
         <div className="p-circle"></div>
       </div>
       <img src={props.img} alt="" className='p-img' />
+      <div className='skill-out'><div className=''></div></div>
       </div>
   )
 }

@@ -3,7 +3,7 @@ import "./contact.css"
 import Phone from "../../img/phone.png"
 import Email from "../../img/email.png"
 import Address from "../../img/address.png"
-import { useRef } from 'react'
+import {useEffect, useRef } from 'react'
 import emailjs from "@emailjs/browser";
 import { useState } from 'react'
 import Insta from "../../img/instagram.png"
@@ -12,8 +12,34 @@ import Git from "../../img/github.png"
 import Twitter from "../../img/twitter.png"
 
 
-const Contact = () => {
+const Contact = (props) => {
     const formRef = useRef()
+    const change = useRef()
+    const change2 = useRef()
+    const change3 = useRef()
+    const change4 = useRef()
+    const change5 = useRef()
+    const change6 = useRef()
+    const theme = props.theme
+    useEffect(() =>{
+        if(theme){
+            change.current.style.color = "white"
+            change2.current.style.color = "white"
+            change3.current.style.color = "white"
+            change4.current.style.color = "white"
+            change5.current.style.color = "white"
+            change6.current.style.color = "white"
+          }
+          else{
+            change.current.style.color = "black"
+            change2.current.style.color = "black"
+            change3.current.style.color = "black"
+            change4.current.style.color = "black"
+            change5.current.style.color = "black"
+            change6.current.style.color = "black"
+          }
+
+    },[theme])
     const [submitted,setSubmitted]=useState(false);
 
     const handleSubmit=(e)=>{
@@ -31,29 +57,29 @@ const Contact = () => {
         <div className="c"><div className="c-bg"></div>
             <div className="c-wrapper">
                 <div className="c-left">
-                    <h1 className="c-title">
+                    <h1 ref={change} className="c-title">
                         Let's discuss your project
                     </h1>
                     <div className="c-info">
-                        <div className="c-info-item">
+                        <div ref={change2} className="c-info-item">
                             <img
                                 src={Phone}
                                 alt=""
                                 srcSet="" className='c-icon' />
                                 +91 7028718223
                         </div>
-                        <div className="c-info-item">
+                        <div ref={change3} className="c-info-item">
                             <img src={Email} alt="" className="c-icon" />
                            yashkhairkar87@gmail.com
                         </div>
-                        <div className="c-info-item">
-                            <img src={Address} alt="" className="c-icon" />
+                        <div ref={change4} className="c-info-item">
+                            <img ref={change6} src={Address} alt="" className="c-icon" />
                             Pune, Maharashtra, India
                         </div>
                     </div>
                 </div>
                 <div className="c-right">
-                    <p className="c-desc">
+                    <p ref={change5} className="c-desc">
                         Wanna get in touch with me, Fill the details below.
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>

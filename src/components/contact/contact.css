@@ -1,5 +1,6 @@
 .c{
-    height: 100vh;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 .c-bg{
@@ -27,6 +28,7 @@
 }
 
 .c-left{
+    margin-top: 30px;
     flex: 1;
 }
 
@@ -61,6 +63,7 @@
 .c-desc{
     font-weight: 200;
     font-size: 1.3rem;
+    margin-top: 30px;
 }
 
 form{
@@ -118,6 +121,7 @@ button{
     .c-wrapper{
         flex-direction: column;
         padding:0px 50px;
+        overflow: hidden;
     }
 
     .c-title{
@@ -135,7 +139,7 @@ button{
     }
 
     form{
-        margin-top: 0px;
+        margin-top: -60px;
         display: flex;
         flex-wrap: wrap;
     }
