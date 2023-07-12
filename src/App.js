@@ -6,6 +6,7 @@ import ProductList from "./components/productList/ProductList";
 import Header from "./components/header/Header";
 import Dark from "./img/dark-img.png"
 import Light from "./img/light-img.png"
+import Project from "./components/project/Project";
 import {
   BrowserRouter as Router,
   Routes,
@@ -40,6 +41,7 @@ function App() {
           <Route path="/about" element={<About theme={dark} />} />
           <Route path="/product" element={<ProductList theme={dark} />} />
           <Route path="/contact" element={<Contact theme={dark} />} />
+          <Route path="/project" element={<Project theme={dark} />} />
        
         </Routes>
       </div>

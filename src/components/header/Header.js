@@ -40,6 +40,7 @@ const Header = (props) => {
             <Link className='Link noSelect' to={"/"}><li>Home</li></Link>
             <Link className='Link noSelect' to={"/about"}><li>About Me</li></Link>
             <Link className='Link noSelect' to={"/product"}><li>Skills</li></Link>
+            <Link className='Link noSelect' to={"/project"}><li>Projects</li></Link>
             <Link className='Link noSelect' to={"/contact"}><li>Contact</li></Link>
           </ul>
         </div>

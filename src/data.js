@@ -4,7 +4,8 @@
 // import js from "../src/img/js.png"
 // import react from "../src/img/react.png"
 // import mern from "../src/img/mern.png"
-
+import Weather from "./img/weather.png"
+import Portfolio from "./img/briefcase.png"
 export const products = [
     {
         id: 1,
@@ -43,4 +44,18 @@ export const products = [
        
     }
 
+]
+
+export const projects = [
+    {
+        id:1,
+        title:"Weather App (PWA)",
+        img: {Weather}
+    },
+    {
+        id:2,
+        title:"Personal Portfolio",
+        img: {Portfolio}
+    }
+  
 ]
